@@ -437,18 +437,21 @@ export function NuestroEquipo() {
           <div className="absolute inset-0 bg-black/10"></div>
           <div className="relative z-10">
             <Users className="mx-auto mb-4 text-white" size={56} />
-            <h3 className="text-white mb-4">Únete a Nuestro Equipo</h3>
+            <h3 className="text-white mb-4">¿Quieres Ser Parte de Este Equipo?</h3>
             <p className="mb-8 opacity-90 max-w-2xl mx-auto">
-              Si eres un profesional apasionado por la educación y el sector construcción, 
-              envíanos tu CV. Estamos siempre en búsqueda de talento comprometido.
+              Inspírate en nuestros docentes, ingenieros y arquitectos. Si aspiras a formarte 
+              como ellos y ser parte de la excelencia en construcción, ¡este es tu lugar!
             </p>
-            <motion.button
+            <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-white text-[#E31E24] px-10 py-4 rounded-full hover:bg-gray-100 transition-all shadow-xl"
+              href="https://forms.gle/QgmgeXrAdq2ALLpYA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-white text-[#E31E24] px-10 py-4 rounded-full hover:bg-gray-100 transition-all shadow-xl"
             >
-              Enviar CV
-            </motion.button>
+              ¡Inscríbete Aquí!
+            </motion.a>
           </div>
         </motion.div>
       </div>

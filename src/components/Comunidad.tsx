@@ -575,10 +575,12 @@ export function Comunidad() {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="#postular"
+              href="https://forms.gle/QgmgeXrAdq2ALLpYA"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-white text-[#E31E24] px-8 py-3 rounded-full hover:bg-gray-100 transition-all shadow-xl"
             >
-              Postula Como Embajador
+              ¡Inscríbete Aquí!
             </motion.a>
           </div>
         </motion.div>
