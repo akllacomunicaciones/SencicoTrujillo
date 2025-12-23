@@ -3,9 +3,6 @@ import { motion } from 'motion/react';
 import { useState } from 'react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { VideoModal } from './VideoModal';
-import embajadorImage from "figma:asset/bd2fb1af471ef9ab49a1f794a2a841a92e190b13.png";
-import nuevaImagenEmbajador from "figma:asset/200ba21707eb6843ea158237d0af9c181ac4fa69.png";
-import fotoEmbajador12 from "figma:asset/8de2e7a1bfb7c1401ef2321203057fe619e896e1.png";
 
 const embajador3Image = "https://images.unsplash.com/photo-1603516270950-26e4f5004ffd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b21hbiUyMGNvbnN0cnVjdGlvbiUyMHdvcmtlciUyMGhlbG1ldCUyMHZlc3R8ZW58MXx8fHwxNzY1Nzc0NzkwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
 const nuevaImagenTarjeta12 = "https://images.unsplash.com/photo-1764328165995-0624c280a6d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBjb25zdHJ1Y3Rpb24lMjB3b3JrZXIlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NjU4MTU2MzN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
@@ -616,7 +613,7 @@ export function Comunidad() {
                 <div className="p-8">
                   <div className="mb-4">
                     <ImageWithFallback
-                      src={index === 0 || index === 1 ? fotoEmbajador12 : (index === 2 || index === 3 ? nuevaImagenEmbajador : embajadorImage)}
+                      src={index < 2 ? embajador3Image : nuevaImagenTarjeta12}
                       alt="Embajador SENCICO" 
                       className="w-full h-auto rounded-2xl mx-auto shadow-lg"
                     />

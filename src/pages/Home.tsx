@@ -1,7 +1,6 @@
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { Building2, GraduationCap, FileText, Users, ArrowRight } from 'lucide-react';
-import logo from 'figma:asset/8319e985d9d62e8efc80bf918c88ed8f831930f1.png';
 
 export function Home() {
   const sections = [
@@ -99,7 +98,7 @@ export function Home() {
                 delay: 0.2
               }}
               whileHover={{ scale: 1.05, rotate: 5 }}
-              src={logo} 
+              src="/images/logo-sencico.png" 
               alt="SENCICO Logo" 
               className="w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 mx-auto mb-6 sm:mb-8 drop-shadow-2xl" 
             />

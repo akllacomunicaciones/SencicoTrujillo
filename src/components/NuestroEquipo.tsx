@@ -1,36 +1,17 @@
-import anaEspinozaImage from 'figma:asset/337687c747e9172bf03ad17bf6d9b5a4c1b31d3b.png';
-import luzdeniVelardeImage from 'figma:asset/78a28786f66573a32cd38ac096f9a158fc9b458e.png';
-import nelsonVeraImage from 'figma:asset/04fe10e6495eda8ede89275f3270b795b15a2d77.png';
-import alberAlvarezImage from 'figma:asset/754e05eb548418d83260c727f244402c452dd8f5.png';
-import angieJaraImage from 'figma:asset/3eea4d16c89cf506664fc781834d65144fc93fd4.png';
-import marielaRojasImage from 'figma:asset/219b8d68ab90e1bc2b9a7c0dfb8bb72d9fc87f3b.png';
-import andyMarceloImage from 'figma:asset/0dd38bfd7eb18557b53574d3cb89765235319fef.png';
-import lizRiosImage from 'figma:asset/60931d63b1ef1483c41c6c0ee50a603f847087aa.png';
-import juanCastilloImage from 'figma:asset/ccaa201b2f08e4ee8ce718bc022961e04c94d0f1.png';
-import ronaldMontoyaImage from 'figma:asset/f3b15b0fc076302c3953e54ed8d848b49c16dfca.png';
-import jairoFloresImage from 'figma:asset/c9a346785e0831c3c7d476b50c79eb2d01348a2c.png';
-import docente4Image from 'figma:asset/81ee29798991d7d521fedd3006ada476c594fbf2.png';
-import jesusMaldonadoImage from 'figma:asset/9580b17dedde04ae067e3f55edfdf3b5a20ec194.png';
-import jorgeWuatanabeImage from 'figma:asset/f8ca66d6de856be5fa3eaa671c97f2355c620790.png';
 import { Users, GraduationCap, Award, Briefcase, Mail, Linkedin } from 'lucide-react';
 import { motion } from 'motion/react';
-import directorImage from "figma:asset/428961c865853a3cb742b0ae0d1d209a743375ef.png";
-import director2Image from "figma:asset/3ec734a62f3565455f7f1a4ad6ba3abccb905611.png";
-import director3Image from "figma:asset/8212bf1abc0e58bd9fe13556de3c3bd3685ba883.png";
-import director4Image from "figma:asset/75ad810c3657fb13feb2d99e434e4cfd2f647e6e.png";
-import docenteImage from "figma:asset/7cf4beea1dbf94bb6ba53f2ba3c7f4e2b0f2e62c.png";
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { useState } from 'react';
 
 export function NuestroEquipo() {
   // Estado para manejar las imágenes de cada docente
   const [docentesImagenes, setDocentesImagenes] = useState<string[]>([
-    juanCastilloImage,
-    ronaldMontoyaImage,
-    jairoFloresImage,
-    docente4Image,
-    jesusMaldonadoImage,
-    jorgeWuatanabeImage
+    '👨‍💼',
+    '👨‍💼',
+    '👨‍💼',
+    '👨‍💼',
+    '👨‍💼',
+    '👨‍💼'
   ]);
 
   // Función para manejar la carga de imagen
@@ -128,37 +109,37 @@ export function NuestroEquipo() {
       nombre: 'Ana Espinoza Cárdenas',
       cargo: 'Administradora',
       area: 'Técnico administrativo secretarial de gerencia',
-      imagen: anaEspinozaImage
+      imagen: '👨‍💼'
     },
     {
       nombre: 'Luzdeni Velarde Burgos',
       cargo: 'Psicóloga',
       area: 'Auxiliar educativo',
-      imagen: luzdeniVelardeImage
+      imagen: '👨‍💼'
     },
     {
       nombre: 'Nelson Vera Escalante',
       cargo: 'Ing. Civil',
       area: 'Asistente de promoción',
-      imagen: nelsonVeraImage
+      imagen: '👨‍💼'
     },
     {
       nombre: 'Alber Alvarez Bustamante',
       cargo: 'Tec. Topógrafo',
       area: 'Auxiliar Educativo',
-      imagen: alberAlvarezImage
+      imagen: '👨‍💼'
     },
     {
       nombre: 'Angie Jara Vásquez',
       cargo: 'Enfermera',
       area: 'Área de Enfermería',
-      imagen: angieJaraImage
+      imagen: '👨‍💼'
     },
     {
       nombre: 'Mariela Rojas Vazquez',
       cargo: 'Psicóloga',
       area: 'Tutoría',
-      imagen: marielaRojasImage
+      imagen: '👨‍💼'
     },
     {
       nombre: 'César Palacio Solano',
@@ -169,13 +150,13 @@ export function NuestroEquipo() {
       nombre: 'Andy Marcelo Díaz',
       cargo: 'Téc. Computación e Informática',
       area: 'Asistente en Soporte Técnico',
-      imagen: andyMarceloImage
+      imagen: '👨‍💼'
     },
     {
       nombre: 'Liz Rios Varas',
       cargo: 'Téc. Edificaciones y Secretaría',
       area: 'Responsable de informes e inscripciones y pagos',
-      imagen: lizRiosImage
+      imagen: '👨‍💼'
     }
   ];
 
@@ -261,7 +242,7 @@ export function NuestroEquipo() {
                 <div className="flex flex-col md:flex-row gap-0 items-stretch">
                   <div className="w-full md:w-80 flex-shrink-0">
                     <img 
-                      src={index === 1 ? director2Image : index === 2 ? director3Image : index === 3 ? director4Image : directorImage} 
+                      src={index === 1 ? '👨‍💼' : index === 2 ? '👨‍💼' : index === 3 ? '👨‍💼' : '👨‍💼'} 
                       alt={directivo.nombre} 
                       className="w-full h-64 md:h-full object-cover"
                     />

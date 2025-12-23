@@ -1,7 +1,6 @@
-import { Facebook, Instagram, Twitter, Linkedin, Youtube, ArrowUp } from 'lucide-react';
-import { motion } from 'motion/react';
+import { Facebook, Instagram, Youtube, MapPin, Phone, Mail, ArrowUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import logo from 'figma:asset/8319e985d9d62e8efc80bf918c88ed8f831930f1.png';
+import { motion } from 'framer-motion';
 
 export function Footer() {
   const scrollToTop = () => {
@@ -11,8 +10,6 @@ export function Footer() {
   const socialLinks = [
     { icon: Facebook, href: '#', label: 'Facebook' },
     { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
     { icon: Youtube, href: '#', label: 'YouTube' }
   ];
 
@@ -48,7 +45,7 @@ export function Footer() {
                 <motion.img 
                   whileHover={{ scale: 1.1, rotate: 5 }}
                   transition={{ type: "spring", stiffness: 300 }}
-                  src={logo} 
+                  src="/images/logo-sencico.png" 
                   alt="SENCICO Logo" 
                   className="w-16 h-16 drop-shadow-xl" 
                 />

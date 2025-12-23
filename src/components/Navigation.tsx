@@ -1,8 +1,7 @@
-import { Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
-import { motion } from 'motion/react';
+import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from 'figma:asset/8319e985d9d62e8efc80bf918c88ed8f831930f1.png';
+import { motion } from 'framer-motion';
 
 export function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -50,7 +49,7 @@ export function Navigation() {
           <motion.img 
             whileHover={{ scale: 1.1, rotate: 5 }}
             transition={{ type: "spring", stiffness: 300 }}
-            src={logo} 
+            src="/images/logo-sencico.png" 
             alt="SENCICO Logo" 
             className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 drop-shadow-lg" 
           />
