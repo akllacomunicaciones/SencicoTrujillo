@@ -36,39 +36,87 @@ export function Formacion() {
   const programas = [
     {
       icon: BookOpen,
-      title: 'Albañilería y Acabados',
-      duration: '120 horas',
-      description: 'Técnicas de construcción, tarrajeos, pisos y revestimientos.'
-    },
-    {
-      icon: BookOpen,
-      title: 'Instalaciones Sanitarias',
-      duration: '80 horas',
-      description: 'Diseño e instalación de redes de agua y desagüe en edificaciones.'
-    },
-    {
-      icon: BookOpen,
-      title: 'Instalaciones Eléctricas',
-      duration: '100 horas',
-      description: 'Sistemas eléctricos residenciales y comerciales bajo normativa vigente.'
-    },
-    {
-      icon: BookOpen,
-      title: 'Seguridad en Obra',
-      duration: '40 horas',
-      description: 'Normativa de seguridad, prevención de riesgos y primeros auxilios.'
-    },
-    {
-      icon: BookOpen,
-      title: 'AutoCAD para Construcción',
+      title: 'AutoCAD 2D',
       duration: '60 horas',
-      description: 'Dibujo técnico digital aplicado a proyectos de construcción.'
+      modality: 'Presencial',
+      description: 'AutoCAD 2D: Dibujos técnicos precisos y profesional.'
     },
     {
       icon: BookOpen,
-      title: 'Excel para Obra',
+      title: 'AutoCAD 3D',
       duration: '40 horas',
-      description: 'Metrados, presupuestos y control de costos en construcción.'
+      modality: 'Presencial',
+      description: 'AutoCAD 3D: Modelado 3D, renderizado y visualización profesional.'
+    },
+    {
+      icon: BookOpen,
+      title: 'AutoCAD Civil 3D',
+      duration: '80 horas',
+      modality: 'Presencial',
+      description: 'Civil 3D: Diseño de infraestructura vial, topografía y obras civiles.'
+    },
+    {
+      icon: BookOpen,
+      title: 'Costos y presupuestos con S10',
+      duration: '80 horas',
+      modality: 'Presencial',
+      description: 'S10 Costos y Presupuestos: Análisis unitario, valorizaciones y gestión eficiente de proyectos.'
+    },
+    {
+      icon: BookOpen,
+      title: 'Revit Architecture',
+      duration: '100 horas',
+      modality: 'Presencial',
+      description: 'Revit Architecture: Modelado, documentación y recorridos virtuales en BIM arquitectónico.'
+    },
+    {
+      icon: BookOpen,
+      title: 'Revit MEP',
+      duration: '40 horas',
+      modality: 'Presencial',
+      description: 'Revit MEP: Modelado 3D de instalaciones MEP y coordinación interdisciplinaria.'
+    },
+    {
+      icon: BookOpen,
+      title: 'Revit Structure',
+      duration: '60 horas',
+      modality: 'Presencial',
+      description: 'Revit Structure: Modelado 3D de estructuras, documentación BIM y análisis normativo.'
+    },
+    {
+      icon: BookOpen,
+      title: 'Valorización y liquidación de obra',
+      duration: '50 horas',
+      modality: 'Presencial',
+      description: 'Valorización y Liquidación en Excel: Formatos, fórmulas y gestión de obra.'
+    },
+    {
+      icon: BookOpen,
+      title: 'Análisis y diseño de estructuras SAP 2000',
+      duration: '100 horas',
+      modality: 'Presencial',
+      description: 'SAP 2000: Análisis y diseño de estructuras con normativas técnicas.'
+    },
+    {
+      icon: BookOpen,
+      title: 'Análisis y diseño de cimentaciones y losas SAFE',
+      duration: '80 horas',
+      modality: 'Presencial',
+      description: 'SAFE: Análisis y diseño de cimentaciones y losas con normativas técnicas.'
+    },
+    {
+      icon: BookOpen,
+      title: 'Análisis y diseño de edificaciones ETABS',
+      duration: '80 horas',
+      modality: 'Presencial',
+      description: 'ETABS: Análisis y diseño de edificaciones con normativas técnicas.'
+    },
+    {
+      icon: BookOpen,
+      title: 'Modelado en arquitectura e interiorismo Sketchup',
+      duration: '60 horas',
+      modality: 'Presencial',
+      description: 'Sketchup: Modelado 3D arquitectura e interiorismo con normativas técnicas.'
     }
   ];
 
@@ -93,8 +141,7 @@ export function Formacion() {
           />
           <h2 className="text-[#E31E24] mb-4">Formación</h2>
           <p className="max-w-3xl mx-auto text-gray-700 leading-relaxed">
-            Carreras técnicas profesionales y programas cortos especializados, con <span className="font-bold text-[#E31E24]">títulos a nombre de la Nación</span>. 
-            Formación permanente sin depender de fechas de inicio.
+            Carreras técnicas profesionales y cursos especializados, con <span className="font-bold text-[#E31E24]">títulos a nombre de la Nación</span>.
           </p>
         </motion.div>
 
@@ -292,7 +339,7 @@ export function Formacion() {
                             >
                               🎓
                             </motion.span>
-                            ¡POSTULA AHORA!
+                            Solicitar Información
                           </span>
                         </motion.a>
                       </motion.div>
@@ -451,7 +498,7 @@ export function Formacion() {
                             >
                               🎓
                             </motion.span>
-                            ¡POSTULA AHORA!
+                            Solicitar Información
                           </span>
                         </motion.a>
                       </motion.div>
@@ -609,7 +656,7 @@ export function Formacion() {
                             >
                               🎓
                             </motion.span>
-                            ¡POSTULA AHORA!
+                            Solicitar Información
                           </span>
                         </motion.a>
                       </motion.div>
@@ -641,10 +688,10 @@ export function Formacion() {
             className="text-gray-900 mb-8 flex items-center gap-3"
           >
             <BookOpen className="text-[#E31E24]" size={32} />
-            Programas Cortos Especializados
+            Cursos Especializados
           </motion.h3>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
             {programas.map((programa, index) => {
               const Icon = programa.icon;
               return (
@@ -654,31 +701,120 @@ export function Formacion() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.05 }}
-                  whileHover={{ scale: 1.02, y: -5 }}
-                  className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all border border-gray-100 group"
+                  whileHover={{ y: -10 }}
+                  className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-gray-100 group"
                 >
-                  <div className="flex items-start gap-4">
-                    <motion.div
-                      whileHover={{ rotate: 360 }}
-                      transition={{ duration: 0.6 }}
-                      className="w-12 h-12 bg-gradient-to-br from-[#E31E24] to-[#B01117] rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg"
-                    >
-                      <Icon className="text-white" size={24} />
-                    </motion.div>
-                    
-                    <div className="flex-1">
-                      <div className="flex items-start justify-between mb-2">
-                        <h4 className="text-gray-900 group-hover:text-[#E31E24] transition-colors text-sm">
-                          {programa.title}
-                        </h4>
-                        <span className="text-xs text-gray-500 whitespace-nowrap ml-2">
-                          {programa.duration}
-                        </span>
+                  <div className="h-3 bg-gradient-to-r from-[#E31E24] to-[#B01117]"></div>
+                  
+                  <div className="p-6">
+                    <div className="flex items-start justify-between mb-4">
+                      <div className="w-16 h-16 bg-gradient-to-br from-[#E31E24] to-[#B01117] rounded-2xl flex items-center justify-center shadow-lg">
+                        <Icon className="text-white" size={28} />
                       </div>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        {programa.description}
-                      </p>
+                      <div className="text-right">
+                        <div className="text-sm text-gray-500">{programa.duration}</div>
+                        <div className="text-xs text-[#E31E24]">{programa.modality}</div>
+                      </div>
                     </div>
+
+                    <h4 className="text-gray-900 mb-3 group-hover:text-[#E31E24] transition-colors">
+                      {programa.title}
+                    </h4>
+                    <p className="text-gray-700 mb-4 leading-relaxed text-sm">
+                      {programa.description}
+                    </p>
+
+                    {/* Contenedor de imagen con borde rojo visible */}
+                    <div className="mb-4 rounded-xl overflow-hidden shadow-lg border-[3px] border-[#E31E24] relative bg-gray-100">
+                      <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                        {/* Imagen del curso */}
+                        <div 
+                          className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
+                          style={{ 
+                            backgroundImage: 'url(https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80)',
+                          }}
+                        >
+                          {/* Overlay sutil para mejor integración */}
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Botón de Solicitar Información con animación */}
+                    <motion.div
+                      className="relative"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                    >
+                      {/* Anillos animados de fondo */}
+                      <motion.div
+                        animate={{
+                          scale: [1, 1.05, 1],
+                          opacity: [0.5, 0.8, 0.5],
+                        }}
+                        transition={{
+                          duration: 2,
+                          repeat: Infinity,
+                          ease: "easeInOut"
+                        }}
+                        className="absolute inset-0 bg-gradient-to-r from-[#E31E24] to-[#B01117] rounded-xl blur-md"
+                      />
+                      
+                      <motion.a
+                        href={`https://wa.me/51985018186?text=Hola%2C%20quiero%20información%20sobre%20el%20curso%20de%20${encodeURIComponent(programa.title)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ 
+                          scale: 1.05, 
+                          y: -5,
+                          boxShadow: "0 20px 40px rgba(227, 30, 36, 0.4)"
+                        }}
+                        whileTap={{ scale: 0.95 }}
+                        animate={{
+                          y: [0, -3, 0],
+                        }}
+                        transition={{
+                          y: {
+                            duration: 2,
+                            repeat: Infinity,
+                            ease: "easeInOut"
+                          }
+                        }}
+                        className="relative block w-full bg-gradient-to-r from-[#E31E24] to-[#B01117] text-white text-center py-3 px-4 rounded-xl shadow-2xl hover:shadow-3xl transition-all overflow-hidden group"
+                      >
+                        {/* Efecto de brillo animado */}
+                        <motion.div
+                          animate={{
+                            x: ['-100%', '200%'],
+                          }}
+                          transition={{
+                            duration: 3,
+                            repeat: Infinity,
+                            ease: "easeInOut",
+                            repeatDelay: 1
+                          }}
+                          className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12"
+                        />
+                        
+                        {/* Texto con animación */}
+                        <span className="relative z-10 flex items-center justify-center gap-2 group-hover:scale-110 transition-transform text-sm">
+                          <motion.span
+                            animate={{
+                              rotate: [0, 10, -10, 0],
+                            }}
+                            transition={{
+                              duration: 0.5,
+                              repeat: Infinity,
+                              repeatDelay: 3
+                            }}
+                          >
+                            📚
+                          </motion.span>
+                          Solicitar Información
+                        </span>
+                      </motion.a>
+                    </motion.div>
                   </div>
                 </motion.div>
               );
@@ -695,19 +831,19 @@ export function Formacion() {
           className="mt-12 bg-gradient-to-r from-[#E31E24] to-[#B01117] rounded-3xl p-8 text-center text-white shadow-2xl"
         >
           <Award className="mx-auto mb-4 text-white" size={48} />
-          <h3 className="text-white mb-3">¿Listo para formarte?</h3>
+          <h3 className="text-white mb-3">📚 Impulsa tu carrera profesional</h3>
           <p className="mb-6 opacity-90 max-w-2xl mx-auto">
-            Consulta requisitos, horarios y procesos de inscripción. Los programas están disponibles de forma permanente.
+            Descubre toda nuestra oferta formativa en construcción, software especializado y certificaciones técnicas. Descarga el catálogo completo.
           </p>
           <motion.a
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
-            href="https://forms.gle/QgmgeXrAdq2ALLpYA"
+            href="https://drive.google.com/uc?export=download&id=1EKcib6Y_tj7YfiZ7b48e4WfWB0k0rw7l"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-white text-[#E31E24] px-8 py-3 rounded-full hover:bg-gray-50 transition-all shadow-2xl hover:shadow-3xl"
           >
-            ¡Inscríbete Aquí!
+            Descargar Catálogo de Cursos
           </motion.a>
         </motion.div>
       </div>

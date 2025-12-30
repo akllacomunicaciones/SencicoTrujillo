@@ -209,15 +209,17 @@ export function Tramites() {
           className="mt-8 text-center"
         >
           <p className="text-gray-600 mb-4">
-            ¿Tienes dudas sobre algún trámite? Comunícate con nosotros para recibir orientación personalizada.
+            ¿Necesitas ayuda con tus trámites administrativos? Contáctanos por WhatsApp y te brindaremos asesoría inmediata.
           </p>
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="#contacto"
+            href="https://wa.me/51985018186?text=Hola%2C%20necesito%20ayuda%20con%20un%20trámite%20administrativo"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-gradient-to-r from-[#E31E24] to-[#B01117] text-white px-8 py-3 rounded-full hover:shadow-lg transition-all"
           >
-            Contactar Mesa de Partes
+            Solicitar Ayuda
           </motion.a>
         </motion.div>
       </div>

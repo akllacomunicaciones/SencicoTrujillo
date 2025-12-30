@@ -14,7 +14,7 @@ export function Home() {
     {
       icon: GraduationCap,
       title: 'Formación',
-      description: 'Carreras técnicas profesionales y programas cortos especializados.',
+      description: 'Carreras técnicas profesionales y cursos especializados.',
       path: '/formacion',
       color: 'from-orange-500 to-red-500'
     },
@@ -142,14 +142,13 @@ export function Home() {
                 href="https://forms.gle/QgmgeXrAdq2ALLpYA"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto"
               >
                 <motion.button
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full sm:w-auto bg-transparent border-2 border-white text-white px-8 sm:px-10 py-3 sm:py-4 rounded-full hover:bg-white hover:text-[#E31E24] transition-all backdrop-blur-sm shadow-lg hover:shadow-xl"
+                  className="bg-transparent border-2 border-white text-white px-10 py-4 rounded-full hover:bg-white hover:text-[#E31E24] transition-all shadow-lg hover:shadow-xl"
                 >
-                  ¡Inscríbete Aquí!
+                  Solicitar Información
                 </motion.button>
               </motion.a>
             </motion.div>

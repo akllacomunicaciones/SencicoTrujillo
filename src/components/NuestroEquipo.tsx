@@ -78,7 +78,7 @@ export function NuestroEquipo() {
       nombre: 'Jairo Flores',
       especialidad: 'Topografía',
       experiencia: '18 años',
-      area: 'Docente en Tecnología',
+      area: 'Docente en Tecnolog��a',
       imagen: docentesImagenes[2]
     },
     {
@@ -226,60 +226,33 @@ export function NuestroEquipo() {
             Equipo Directivo
           </motion.h3>
 
-          <div className="flex flex-col gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {directivos.map((directivo, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ y: -10 }}
-                className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-gray-100 group"
+                transition={{ duration: 0.5, delay: index * 0.05 }}
+                whileHover={{ scale: 1.02 }}
+                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all border border-gray-100 group"
               >
-                <div className="h-3 bg-gradient-to-r from-[#E31E24] to-[#B01117]"></div>
+                {/* Foto - Sin padding, ocupa toda la parte superior */}
+                <div className="w-full h-64 bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
+                  <img 
+                    src={directivo.imagen} 
+                    alt={directivo.nombre}
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
                 
-                <div className="flex flex-col md:flex-row gap-0 items-stretch">
-                  <div className="w-full md:w-80 flex-shrink-0">
-                    <img 
-                      src={index === 1 ? '👨‍💼' : index === 2 ? '👨‍💼' : index === 3 ? '👨‍💼' : '👨‍💼'} 
-                      alt={directivo.nombre} 
-                      className="w-full h-64 md:h-full object-cover"
-                    />
-                  </div>
-                  
-                  <div className="flex-1 p-6 md:p-8">
-                    <h4 className="text-gray-900 mb-1 group-hover:text-[#E31E24] transition-colors">
-                      {directivo.nombre}
-                    </h4>
-                    <p className="text-[#E31E24] mb-4">{directivo.cargo}</p>
-                    
-                    <div className="bg-gray-50 rounded-xl p-4 mb-4">
-                      <div className="text-xs text-gray-500 mb-1">Especialidad:</div>
-                      <p className="text-sm text-gray-700">{directivo.especialidad}</p>
-                    </div>
-
-                    <div className="border-l-4 border-[#E31E24] pl-4 py-2 bg-[#E31E24]/5 rounded-r-xl mb-4">
-                      <p className="text-sm text-gray-700">{directivo.descripcion}</p>
-                    </div>
-
-                    <div className="flex gap-3">
-                      <motion.button
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        className="w-10 h-10 bg-gray-100 hover:bg-[#E31E24] hover:text-white rounded-full flex items-center justify-center transition-all"
-                      >
-                        <Mail size={18} />
-                      </motion.button>
-                      <motion.button
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        className="w-10 h-10 bg-gray-100 hover:bg-[#E31E24] hover:text-white rounded-full flex items-center justify-center transition-all"
-                      >
-                        <Linkedin size={18} />
-                      </motion.button>
-                    </div>
-                  </div>
+                {/* Información - Con padding */}
+                <div className="p-6">
+                  <h4 className="text-gray-900 group-hover:text-[#E31E24] transition-colors mb-1">
+                    {directivo.nombre}
+                  </h4>
+                  <p className="text-sm text-[#E31E24] mb-2">{directivo.cargo}</p>
+                  <p className="text-xs text-gray-600">{directivo.especialidad}</p>
                 </div>
               </motion.div>
             ))}
@@ -337,41 +310,33 @@ export function NuestroEquipo() {
             Plana Docente
           </motion.h3>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {docentes.map((docente, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ y: -10 }}
-                className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-gray-100 group"
+                transition={{ duration: 0.5, delay: index * 0.05 }}
+                whileHover={{ scale: 1.02 }}
+                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all border border-gray-100 group"
               >
-                <div className="h-3 bg-gradient-to-r from-[#E31E24] to-[#B01117]"></div>
-                
-                <div className="overflow-hidden relative">
+                {/* Foto - Sin padding, ocupa toda la parte superior */}
+                <div className="w-full h-64 bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
                   <ImageWithFallback 
                     src={docente.imagen}
                     alt={docente.nombre}
-                    className="w-full h-80 object-cover"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
                 
-                <div className="p-8">
-                  <h4 className="text-gray-900 mb-1 text-center group-hover:text-[#E31E24] transition-colors">
+                {/* Información - Con padding */}
+                <div className="p-6">
+                  <h4 className="text-gray-900 group-hover:text-[#E31E24] transition-colors mb-1">
                     {docente.nombre}
                   </h4>
-                  <p className="text-[#E31E24] text-center mb-4">{docente.especialidad}</p>
-                  
-                  <div className="bg-gray-50 rounded-xl p-4 mb-4">
-                    <div className="text-xs text-gray-500 mb-1">Experiencia:</div>
-                    <p className="text-sm text-gray-700">{docente.experiencia}</p>
-                  </div>
-
-                  <div className="border-l-4 border-[#E31E24] pl-4 py-2 bg-[#E31E24]/5 rounded-r-xl">
-                    <p className="text-sm text-gray-700">{docente.area}</p>
-                  </div>
+                  <p className="text-sm text-[#E31E24] mb-2">{docente.area}</p>
+                  <p className="text-xs text-gray-600">{docente.especialidad}</p>
                 </div>
               </motion.div>
             ))}
@@ -419,8 +384,8 @@ export function NuestroEquipo() {
                   <h4 className="text-gray-900 group-hover:text-[#E31E24] transition-colors mb-1">
                     {admin.nombre}
                   </h4>
-                  <p className="text-sm text-[#E31E24] mb-2">{admin.cargo}</p>
-                  <p className="text-xs text-gray-600">{admin.area}</p>
+                  <p className="text-sm text-[#E31E24] mb-2">{admin.area}</p>
+                  <p className="text-xs text-gray-600">{admin.cargo}</p>
                 </div>
               </motion.div>
             ))}
@@ -437,10 +402,10 @@ export function NuestroEquipo() {
           <div className="absolute inset-0 bg-black/10"></div>
           <div className="relative z-10">
             <Users className="mx-auto mb-4 text-white" size={56} />
-            <h3 className="text-white mb-4">¿Quieres Ser Parte de Este Equipo?</h3>
+            <h3 className="text-white mb-4">De Alumno a Jefe de Obra</h3>
             <p className="mb-8 opacity-90 max-w-2xl mx-auto">
-              Inspírate en nuestros docentes, ingenieros y arquitectos. Si aspiras a formarte 
-              como ellos y ser parte de la excelencia en construcción, ¡este es tu lugar!
+              Estudia con expertos que te enseñan lo que realmente pide el mercado de la construcción. 
+              Únete a SENCICO Trujillo y convierte tu talento en una carrera técnica bien pagada.
             </p>
             <motion.a
               whileHover={{ scale: 1.05 }}
@@ -450,7 +415,7 @@ export function NuestroEquipo() {
               rel="noopener noreferrer"
               className="inline-block bg-white text-[#E31E24] px-10 py-4 rounded-full hover:bg-gray-100 transition-all shadow-xl"
             >
-              ¡Inscríbete Aquí!
+              Solicitar Información
             </motion.a>
           </div>
         </motion.div>

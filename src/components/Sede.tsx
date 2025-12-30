@@ -11,7 +11,7 @@ export function Sede() {
     {
       icon: Users,
       title: 'Autoridad Regional',
-      description: 'Jefatura Zonal La Libertad a cargo de la gestión y desarrollo de programas formativos en el norte del país.'
+      description: 'Gerencia Zonal Trujillo a cargo de la gestión y desarrollo de programas formativos en el norte del país.'
     },
     {
       icon: MapPin,
@@ -21,7 +21,7 @@ export function Sede() {
     {
       icon: Clock,
       title: 'Horarios de Atención',
-      description: 'Lunes a Viernes: 8:00 AM - 5:00 PM | Sábados: 9:00 AM - 1:00 PM. Atención continua sin interrupciones.'
+      description: 'Lunes a Viernes: 8:00 AM - 5:00 PM'
     }
   ];
 
@@ -75,12 +75,12 @@ export function Sede() {
                 certificación de profesionales del sector construcción en la región La Libertad.
               </p>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Bajo la Jefatura Zonal La Libertad, operamos como centro de excelencia académica 
+                Bajo la Gerencia Zonal Trujillo, operamos como centro de excelencia académica 
                 y técnica, contribuyendo al desarrollo de la industria constructora regional y nacional.
               </p>
               <div className="bg-gradient-to-r from-[#E31E24]/10 to-transparent p-4 rounded-xl border-l-4 border-[#E31E24]">
                 <p className="text-gray-800">
-                  <strong>Jefatura Zonal La Libertad</strong><br/>
+                  <strong>Gerencia Zonal Trujillo</strong><br/>
                   Autoridad regional responsable de la planificación y ejecución de programas formativos, 
                   certificación y servicios técnicos en la zona norte del país.
                 </p>
