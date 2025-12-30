@@ -154,10 +154,10 @@ export function NuestroEquipo() {
       imagen: '/images/liz-rios.png'
     },
     {
-      nombre: 'Juan Castillo',
+      nombre: 'César Palacios',
       cargo: 'Personal Administrativo',
-      area: 'Apoyo General',
-      imagen: '/images/juan-castillo.png'
+      area: 'Soporte Técnico',
+      imagen: '/images/cesar-palacios.png'
     }
   ];
 

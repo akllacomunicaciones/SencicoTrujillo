@@ -23,7 +23,7 @@ Coloca estos archivos **EXACTAMENTE** con estos nombres en `/public/images/`
 [ ] mariela-rojas.png         (Mariela Rojas Vazquez)
 [ ] andy-marcelo.png          (Andy Marcelo Díaz)
 [ ] liz-rios.png              (Liz Rios Varas)
-[ ] juan-castillo.png         (Juan Castillo)
+[ ] cesar-palacios.png        (César Palacios - Soporte Técnico)
 ```
 
 ---
@@ -85,7 +85,7 @@ Coloca estos archivos **EXACTAMENTE** con estos nombres en `/public/images/`
   ├── mariela-rojas.png
   ├── andy-marcelo.png
   ├── liz-rios.png
-  ├── juan-castillo.png
+  ├── cesar-palacios.png
   ├── ronald-montoya.png
   ├── jairo-flores.png
   ├── docente-4.png

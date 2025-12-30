@@ -26,7 +26,7 @@ Copia esta lista y marca cada una cuando la descargues:
 - [ ] `mariela-rojas.png` - Mariela Rojas Vazquez
 - [ ] `andy-marcelo.png` - Andy Marcelo Díaz
 - [ ] `liz-rios.png` - Liz Rios Varas
-- [ ] `juan-castillo.png` - Juan Castillo (si disponible)
+- [ ] `cesar-palacios.png` - César Palacios (Soporte Técnico)
 
 **Docentes (10 personas):**
 - [ ] `ronald-montoya.png` - Ronald Montoya

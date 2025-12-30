@@ -24,7 +24,7 @@ Necesitas descargar **25 imágenes** en total:
 - `mariela-rojas.png`
 - `andy-marcelo.png`
 - `liz-rios.png`
-- `juan-castillo.png`
+- `cesar-palacios.png`
 - `ronald-montoya.png`
 - `jairo-flores.png`
 - `docente-4.png`
