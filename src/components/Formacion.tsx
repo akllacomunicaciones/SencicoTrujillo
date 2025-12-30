@@ -2,6 +2,7 @@ import { GraduationCap, BookOpen, Clock, Award } from 'lucide-react';
 import { motion } from 'motion/react';
 import { useState } from 'react';
 import { VideoModal } from './VideoModal';
+import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function Formacion() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -39,84 +40,96 @@ export function Formacion() {
       title: 'AutoCAD 2D',
       duration: '60 horas',
       modality: 'Presencial',
-      description: 'AutoCAD 2D: Dibujos técnicos precisos y profesional.'
+      description: 'AutoCAD 2D: Dibujos técnicos precisos y profesional.',
+      imagen: '/images/autocad-2d.png'
     },
     {
       icon: BookOpen,
       title: 'AutoCAD 3D',
       duration: '40 horas',
       modality: 'Presencial',
-      description: 'AutoCAD 3D: Modelado 3D, renderizado y visualización profesional.'
+      description: 'AutoCAD 3D: Modelado 3D, renderizado y visualización profesional.',
+      imagen: '/images/autocad-3d.png'
     },
     {
       icon: BookOpen,
       title: 'AutoCAD Civil 3D',
       duration: '80 horas',
       modality: 'Presencial',
-      description: 'Civil 3D: Diseño de infraestructura vial, topografía y obras civiles.'
+      description: 'Civil 3D: Diseño de infraestructura vial, topografía y obras civiles.',
+      imagen: '/images/autocad-civil-3d.png'
     },
     {
       icon: BookOpen,
       title: 'Costos y presupuestos con S10',
       duration: '80 horas',
       modality: 'Presencial',
-      description: 'S10 Costos y Presupuestos: Análisis unitario, valorizaciones y gestión eficiente de proyectos.'
+      description: 'S10 Costos y Presupuestos: Análisis unitario, valorizaciones y gestión eficiente de proyectos.',
+      imagen: '/images/costos-presupuestos-s10.png'
     },
     {
       icon: BookOpen,
       title: 'Revit Architecture',
       duration: '100 horas',
       modality: 'Presencial',
-      description: 'Revit Architecture: Modelado, documentación y recorridos virtuales en BIM arquitectónico.'
+      description: 'Revit Architecture: Modelado, documentación y recorridos virtuales en BIM arquitectónico.',
+      imagen: '/images/revit-architecture.png'
     },
     {
       icon: BookOpen,
       title: 'Revit MEP',
       duration: '40 horas',
       modality: 'Presencial',
-      description: 'Revit MEP: Modelado 3D de instalaciones MEP y coordinación interdisciplinaria.'
+      description: 'Revit MEP: Modelado 3D de instalaciones MEP y coordinación interdisciplinaria.',
+      imagen: '/images/revit-mep.png'
     },
     {
       icon: BookOpen,
       title: 'Revit Structure',
       duration: '60 horas',
       modality: 'Presencial',
-      description: 'Revit Structure: Modelado 3D de estructuras, documentación BIM y análisis normativo.'
+      description: 'Revit Structure: Modelado 3D de estructuras, documentación BIM y análisis normativo.',
+      imagen: '/images/revit-structure.png'
     },
     {
       icon: BookOpen,
       title: 'Valorización y liquidación de obra',
       duration: '50 horas',
       modality: 'Presencial',
-      description: 'Valorización y Liquidación en Excel: Formatos, fórmulas y gestión de obra.'
+      description: 'Valorización y Liquidación en Excel: Formatos, fórmulas y gestión de obra.',
+      imagen: '/images/valorización-liquidación.png'
     },
     {
       icon: BookOpen,
       title: 'Análisis y diseño de estructuras SAP 2000',
       duration: '100 horas',
       modality: 'Presencial',
-      description: 'SAP 2000: Análisis y diseño de estructuras con normativas técnicas.'
+      description: 'SAP 2000: Análisis y diseño de estructuras con normativas técnicas.',
+      imagen: '/images/estructuras-sap2000.png'
     },
     {
       icon: BookOpen,
       title: 'Análisis y diseño de cimentaciones y losas SAFE',
       duration: '80 horas',
       modality: 'Presencial',
-      description: 'SAFE: Análisis y diseño de cimentaciones y losas con normativas técnicas.'
+      description: 'SAFE: Análisis y diseño de cimentaciones y losas con normativas técnicas.',
+      imagen: '/images/cimentaciones-losas-safe.png'
     },
     {
       icon: BookOpen,
       title: 'Análisis y diseño de edificaciones ETABS',
       duration: '80 horas',
       modality: 'Presencial',
-      description: 'ETABS: Análisis y diseño de edificaciones con normativas técnicas.'
+      description: 'ETABS: Análisis y diseño de edificaciones con normativas técnicas.',
+      imagen: '/images/edificaciones-etabs.png'
     },
     {
       icon: BookOpen,
       title: 'Modelado en arquitectura e interiorismo Sketchup',
       duration: '60 horas',
       modality: 'Presencial',
-      description: 'Sketchup: Modelado 3D arquitectura e interiorismo con normativas técnicas.'
+      description: 'Sketchup: Modelado 3D arquitectura e interiorismo con normativas técnicas.',
+      imagen: '/images/modelado-sketchup.png'
     }
   ];
 
@@ -728,15 +741,13 @@ export function Formacion() {
                     <div className="mb-4 rounded-xl overflow-hidden shadow-lg border-[3px] border-[#E31E24] relative bg-gray-100">
                       <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
                         {/* Imagen del curso */}
-                        <div 
-                          className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
-                          style={{ 
-                            backgroundImage: 'url(https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80)',
-                          }}
-                        >
-                          {/* Overlay sutil para mejor integración */}
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                        </div>
+                        <ImageWithFallback
+                          src={programa.imagen}
+                          alt={programa.title}
+                          className="absolute top-0 left-0 w-full h-full object-cover"
+                        />
+                        {/* Overlay sutil para mejor integración */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                       </div>
                     </div>
 

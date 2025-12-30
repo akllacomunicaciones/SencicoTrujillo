@@ -78,58 +78,32 @@ export function Comunidad() {
 
   const embajadores = [
     {
-      nombre: 'Juan Carlos Méndez',
-      profesion: 'Ingeniero Civil',
-      empresa: 'Constructora del Norte SAC',
-      año: 'Promoción 2018',
-      logros: 'Supervisor de obra en proyecto habitacional de 500 viviendas',
-      testimonio: 'SENCICO me dio las herramientas para liderar proyectos importantes. Hoy soy referente en mi empresa.',
-      imagen: '👷‍♂️'
+      nombre: 'Romano',
+      carrera: 'Edificaciones',
+      nivel: 'Estudiante',
+      semestre: '4to ciclo',
+      imagen: '/images/romano.png'
     },
     {
-      nombre: 'Rosa Miranda Díaz',
-      profesion: 'Técnica en Topografía',
-      empresa: 'Consultora Geodésica Trujillo',
-      año: 'Promoción 2020',
-      logros: 'Especialista en levantamientos con drones y tecnología GPS',
-      testimonio: 'Como mujer en construcción, SENCICO me dio la confianza y preparación para destacar en un sector retador.',
-      imagen: '👩‍💼'
+      nombre: 'Gianela',
+      carrera: 'Topografía',
+      nivel: 'Estudiante',
+      semestre: '2do ciclo',
+      imagen: '/images/gianela.png'
     },
     {
-      nombre: 'Miguel Ángel Ruiz',
-      profesion: 'Maestro de Obra Certificado',
-      empresa: 'Independiente',
-      año: 'Certificado 2019',
-      logros: 'Fundador de su propia empresa constructora con 15 trabajadores',
-      testimonio: 'La certificación de competencias validó mi experiencia. Ahora tengo mi propia empresa y genero empleo.',
-      imagen: '👨‍🔧'
+      nombre: 'Embajador SENCICO',
+      carrera: 'Diseño de Interiores',
+      nivel: 'Recién Egresado',
+      semestre: 'Promoción 2024',
+      imagen: '/images/embajador-3.png'
     },
     {
-      nombre: 'Carmen Vega Sánchez',
-      profesion: 'Arquitecta de Interiores',
-      empresa: 'Estudio Creativo CV',
-      año: 'Promoción 2021',
-      logros: 'Ganadora del premio regional de diseño sostenible 2024',
-      testimonio: 'SENCICO combinó teoría y práctica perfectamente. Hoy diseño espacios que transforman vidas.',
-      imagen: '👩‍🎨'
-    },
-    {
-      nombre: 'Luis Paredes Torres',
-      profesion: 'Operador de Maquinaria Pesada',
-      empresa: 'Obras Públicas Regionales',
-      año: 'Certificado 2022',
-      logros: 'Operador principal en proyecto de infraestructura vial',
-      testimonio: 'La certificación abrió puertas que nunca imaginé. Trabajo en proyectos de alto nivel.',
-      imagen: '🚜'
-    },
-    {
-      nombre: 'Ana Becerra Flores',
-      profesion: 'Instaladora Sanitaria',
-      empresa: 'Servicios Técnicos AB',
-      año: 'Certificada 2023',
-      logros: 'Primera mujer gasfitero certificada en La Libertad',
-      testimonio: 'Rompí estereotipos gracias a SENCICO. Soy prueba de que las mujeres podemos destacar en cualquier oficio.',
-      imagen: '👩‍🔧'
+      nombre: 'Gerald',
+      carrera: 'Edificaciones',
+      nivel: 'Recién Egresado',
+      semestre: 'Promoción 2024',
+      imagen: '/images/gerald.png'
     }
   ];
 
@@ -193,6 +167,56 @@ export function Comunidad() {
             aliados y proyectos que transforman vidas y construyen el futuro de La Libertad.
           </p>
         </motion.div>
+
+        {/* SECCIÓN DE FOTOS DE EMBAJADORES */}
+        <div className="mb-20">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="flex items-center gap-3 mb-8"
+          >
+            <div className="w-12 h-12 bg-gradient-to-br from-[#E31E24] to-[#B01117] rounded-xl flex items-center justify-center shadow-lg">
+              <Trophy className="text-white" size={28} />
+            </div>
+            <h3 className="text-gray-900">Nuestros Embajadores</h3>
+          </motion.div>
+
+          <div className="grid md:grid-cols-4 gap-8">
+            {embajadores.map((embajador, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                whileHover={{ y: -10 }}
+                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border border-gray-100"
+              >
+                {/* Foto del embajador */}
+                <div className="relative h-72 bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
+                  <ImageWithFallback
+                    src={embajador.imagen}
+                    alt={embajador.nombre}
+                    className="w-full h-full object-cover"
+                  />
+                  
+                  {/* Badge de nivel */}
+                  <div className="absolute top-4 right-4 bg-[#E31E24] text-white px-3 py-1.5 rounded-full text-xs shadow-lg">
+                    {embajador.nivel}
+                  </div>
+                </div>
+
+                {/* Información simplificada */}
+                <div className="p-5 text-center">
+                  <h4 className="text-gray-900 mb-2">{embajador.nombre}</h4>
+                  <p className="text-[#E31E24] mb-2">{embajador.carrera}</p>
+                  <p className="text-sm text-gray-600">{embajador.semestre}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
 
         {/* Historias de Éxito */}
         <div className="mb-20">

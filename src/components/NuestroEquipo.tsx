@@ -34,28 +34,28 @@ export function NuestroEquipo() {
       cargo: 'Jefe Zonal Trujillo',
       especialidad: 'Ingeniero Civil - MBA en Gestión Educativa',
       descripcion: 'Líder con más de 20 años de experiencia en formación técnica y desarrollo institucional.',
-      imagen: '👨‍💼'
+      imagen: '/images/director-2.png'
     },
     {
       nombre: 'JUAN GUILLÉN',
       cargo: 'Promotor Académico',
       especialidad: 'Licenciado en Administración - Especialista en Gestión Comercial',
       descripcion: 'Encargado de la promoción y difusión de programas académicos, así como del vínculo con nuevos estudiantes.',
-      imagen: '👨‍💼'
+      imagen: '/images/director-3.png'
     },
     {
       nombre: 'JACKELINE MACHUCA',
       cargo: 'Coordinadora Académica',
       especialidad: 'Mg. Auditoría y gestión pública',
       descripcion: 'Responsable de la calidad académica y desarrollo curricular de los programas formativos.',
-      imagen: '👩‍💼'
+      imagen: '/images/director-4.png'
     },
     {
       nombre: 'ALEX ARRIBASPLATA',
       cargo: 'Especialista educativo',
       especialidad: 'Mg. Administración',
       descripcion: 'Gestiona los servicios de certificación, ensayos de materiales y control de calidad.',
-      imagen: '👨‍🔬'
+      imagen: '/images/docente-principal.png'
     }
   ];
 
@@ -65,42 +65,42 @@ export function NuestroEquipo() {
       especialidad: 'Ingeniero Civil',
       experiencia: '15 años',
       area: 'Docente de Experiencias Formativas',
-      imagen: docentesImagenes[0]
+      imagen: '/images/director-1.png'
     },
     {
       nombre: 'Ronald Montoya',
       especialidad: 'Arquitecto',
       experiencia: '12 años',
       area: 'Docente en Diseño de Interiores',
-      imagen: docentesImagenes[1]
+      imagen: '/images/ronald-montoya.png'
     },
     {
       nombre: 'Jairo Flores',
       especialidad: 'Topografía',
       experiencia: '18 años',
-      area: 'Docente en Tecnolog��a',
-      imagen: docentesImagenes[2]
+      area: 'Docente en Tecnología',
+      imagen: '/images/jairo-flores.png'
     },
     {
       nombre: 'Alberto Flores Guerrero',
       especialidad: 'Arquitecto',
       experiencia: '10 años',
       area: 'Docente de Dibujo',
-      imagen: docentesImagenes[3]
+      imagen: '/images/docente-4.png'
     },
     {
       nombre: 'Jesús Maldonado',
       especialidad: 'Gestión de la Construcción',
       experiencia: '14 años',
       area: 'Docente en Gestión de la Construcción',
-      imagen: docentesImagenes[4]
+      imagen: '/images/jesus-maldonado.png'
     },
     {
       nombre: 'Jorge Wuatanabe Ibáñez',
       especialidad: 'Ingeniero Civil',
       experiencia: '11 años',
       area: 'Docente en Topografía',
-      imagen: docentesImagenes[5]
+      imagen: '/images/jorge-watanabe.png'
     }
   ];
 
@@ -109,54 +109,55 @@ export function NuestroEquipo() {
       nombre: 'Ana Espinoza Cárdenas',
       cargo: 'Administradora',
       area: 'Técnico administrativo secretarial de gerencia',
-      imagen: '👨‍💼'
+      imagen: '/images/ana-espinoza.png'
     },
     {
       nombre: 'Luzdeni Velarde Burgos',
       cargo: 'Psicóloga',
       area: 'Auxiliar educativo',
-      imagen: '👨‍💼'
+      imagen: '/images/luzdeni-velarde.png'
     },
     {
       nombre: 'Nelson Vera Escalante',
       cargo: 'Ing. Civil',
       area: 'Asistente de promoción',
-      imagen: '👨‍💼'
+      imagen: '/images/nelson-vera.png'
     },
     {
       nombre: 'Alber Alvarez Bustamante',
       cargo: 'Tec. Topógrafo',
       area: 'Auxiliar Educativo',
-      imagen: '👨‍💼'
+      imagen: '/images/alber-alvarez.png'
     },
     {
       nombre: 'Angie Jara Vásquez',
       cargo: 'Enfermera',
       area: 'Área de Enfermería',
-      imagen: '👨‍💼'
+      imagen: '/images/angie-jara.png'
     },
     {
       nombre: 'Mariela Rojas Vazquez',
       cargo: 'Psicóloga',
       area: 'Tutoría',
-      imagen: '👨‍💼'
-    },
-    {
-      nombre: 'César Palacio Solano',
-      cargo: 'Téc. Computación e Informática',
-      area: 'Soporte Técnico'
+      imagen: '/images/mariela-rojas.png'
     },
     {
       nombre: 'Andy Marcelo Díaz',
       cargo: 'Téc. Computación e Informática',
       area: 'Asistente en Soporte Técnico',
-      imagen: '👨‍💼'
+      imagen: '/images/andy-marcelo.png'
     },
     {
       nombre: 'Liz Rios Varas',
       cargo: 'Téc. Edificaciones y Secretaría',
       area: 'Responsable de informes e inscripciones y pagos',
-      imagen: '👨‍💼'
+      imagen: '/images/liz-rios.png'
+    },
+    {
+      nombre: 'Juan Castillo',
+      cargo: 'Personal Administrativo',
+      area: 'Apoyo General',
+      imagen: '/images/juan-castillo.png'
     }
   ];
 
